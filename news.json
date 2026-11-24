@@ -1,5 +1,5 @@
 {
- "updated": 1795539022,
+ "updated": 1795539319,
  "count": 85,
  "items": [
   {
@@ -70,16 +70,6 @@
    "publisher": "Fortune",
    "lang": "en",
    "time": 1795532425,
-   "image": ""
-  },
-  {
-   "title": "Gold Rate Today in India, 24 Nov 2026 - Live 18K, 22K & 24K Gold Prices",
-   "snippet": "",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9oS1doakpSUWg2blRCZGtNeWp5UXFadUo5cVZtTzd5bzBsdHNnUHlsTG9KVEN5UGVMaENmNVNDSGxrVmVLaHgtYWRPeEE?oc=5",
-   "source": "GOOGLE_NEWS_EN",
-   "publisher": "Kotak Neo",
-   "lang": "en",
-   "time": 1795532240,
    "image": ""
   },
   {
@@ -160,6 +150,16 @@
    "publisher": "Yahoo Finance",
    "lang": "en",
    "time": 1795522701,
+   "image": ""
+  },
+  {
+   "title": "Gold Rate Today in India, 24 Nov 2026 - Live 18K, 22K & 24K Gold Prices",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9oS1doakpSUWg2blRCZGtNeWp5UXFadUo5cVZtTzd5bzBsdHNnUHlsTG9KVEN5UGVMaENmNVNDSGxrVmVLaHgtYWRPeEE?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Kotak Neo",
+   "lang": "en",
+   "time": 1795520179,
    "image": ""
   },
   {
