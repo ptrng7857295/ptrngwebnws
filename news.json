@@ -1,0 +1,596 @@
+{
+ "updated": 1795537715,
+ "count": 59,
+ "items": [
+  {
+   "title": "JPMorgan cuts gold target to $4,500",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaWpOOGVuQUxNZXF2TC1tcWx0bDFZa3pSZHVLVC13Q2p5WDJiYVFpa2VMNFpqWndYbDNTaFk0bnBqbER6YVdFLTRkS1BtRnlPNndZbk9rLWgwSXZ5cFV3VVI4Y0hVaGtsbDVOSUNCWWZGeWdSN2ExcXppUmkxUUFCMkxEazFnZFZrWWR1WkY5bVA?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "MoneyWise.com",
+   "lang": "en",
+   "time": 1795535181,
+   "image": ""
+  },
+  {
+   "title": "Video Harga Emas Dunia Masih Berpotensi Turun, Pengamat Sarankan Beli Emas Perhiasan",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPanNBdU5FbHJqaUd4UUFXZ1JUQnNjTk5FQ1ZUVHdoUHNnSW9lcVVXMlhXQW9vYkc3VGdwTl9LMFBvUnBjYlg1UTUyWUJFaFhJUjc0djk4Z2VBVkhLZUU4VTY3VGZfU3FzWFpWaElCLXRSUTNXaGdEbUZ6YWltWUNXa0d4Y201ZnNtUjRQSGxTQldMamM1YVk1RmRBZW9LaHV4clRTM2dZYjFid0lQUnBJZTJLWERoNy1fem1xV3FoOXFpQTk0Z1BiMDFUVTdYTmtD?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "20detik",
+   "lang": "id",
+   "time": 1795535095,
+   "image": ""
+  },
+  {
+   "title": "Prakiraan Harga Emas Mingguan: Sikap Hawkish Fed dan Potensi Pengurangan Leverage Tekan Emas",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQa3BNM3l4S3BvUmF0QmRGMXdsbzVlS3hMRUlPR0gxM3ppRV9veHRPUjB6QXh3VldIQ0QzaWZoRk05TlIzWXp6Rlh3T2phb0ZRZEZqUEFuSlVIWWt2UFBkMjZZd2Z1VnJ5dFpRbDgwYlV0b3g1R0FoaTdfTEpQbW95eUlJMmFPRzVydHdfb1drejlnMEZ4dUN2VjVMUlRPNEFzWFJJTlNwT19ORXI0RjlBV0hXaVZfZ2QtaGkwMVJoRnNmYkRjMjNycEdITllYTHRFMlVTQ0s2WXA?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "FXStreet",
+   "lang": "id",
+   "time": 1795534027,
+   "image": ""
+  },
+  {
+   "title": "Gold price testing support near $3,600 as US Consumer Confidence sees sharp rise in November",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONW1hcGJjNFlvQ1ppXzM3S0l5YUpzbkZhXzg1c2FPMEhLNVZ0dklmVW1TUHY3dmtxN21ZZVNvQVNHRzh0RXBtN2lmeGZ1OHVEVW5vNFdlYTdSZFFxY0tJU05vQkh1dVRXUk1lYl9NZko0eTd1cGdjRmR1WU5lUGtaTDNXYUxKZTNfcUpsc1c1MG9IRmVWUWFrTVVDV0s5OVJiNHRXRUIwb3ZMeVZzQ0N6a09TZF90MDhOOEoyeUpB?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Kitco",
+   "lang": "en",
+   "time": 1795532507,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Jonson di Gayo Lues Turun, Kini Rp 7,5 Juta per Mayam",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSWxjWXVyOUxPYk5FRUl2RmIxdU1BNDcyams3VEtBR09HYkgtV0JzV2pIN0Y4aWlyODNuMElRc2VUU09nREk0TzJFVEM5MXBBVTJGdlgyVGJNTG82UzRhZ0lNd1dTWEVzaXBpRXV0YlFWSTdUODc2cXVSUjBYV2tpbzFwc0YzR3VWa3VWTnhJSG5iWDFPTUxEWjJQdGV2anFrZWN1VUM4UEFqMU0?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Serambinews.com",
+   "lang": "id",
+   "time": 1795531818,
+   "image": ""
+  },
+  {
+   "title": "Gold Price Forecast: ETF Outflows Threaten Gold’s Sharp Recovery",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOclpvNDNQTXNRLVpXWlB1ZDFXZ0lLNnVEQUJQMXltYzN0UF9UQV9weTJkZDZDYjVlWWZwczlGZ3ZjaHpwa05ES0FhV1BNRDVZVmhZbDNnVjhCcG1qTFdIZTA2VnZ6dXhabGU3dmtZd29zUVdGNi10SWh1R3NmZU9QVVZpQ29CeEs4WEFWRUxLVVlfV2xnbjUzTkcwXzE0cHdfYVhjYnREVDlsTEZlZjczUWNwdw?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "FXEmpire",
+   "lang": "en",
+   "time": 1795530978,
+   "image": ""
+  },
+  {
+   "title": "Gold Price Today on November 24, 2026",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdGV2LUZjZ21fUTFpcmtid3FCeXkxS3V5WXNZZ3lBdE1ZZ1hlaXhsdVJMVWZhdVhYeEdTVDFaOVJ2R3RPVG9Lb0tHWGIwWFhvcVo2U2FvX3l2NFdIVEdnMjJkWG9EX0pGa25LR0l2cWlYZ3hqVFJpQ1F6MU11bTAweGtZU1pXaUVWeGlXUHMyWjF1b1VGazAwZ2M3OEp5NVZHbUww?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "USA Today",
+   "lang": "en",
+   "time": 1795529640,
+   "image": ""
+  },
+  {
+   "title": "Gold struggles to extend rebound as Fed rate hike bets pressure silver - Kitco AM Report",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRXZLTW5tSldXS2RtLTBnUXc0MFZ6QkRwYjNINlNUdThxVXNnMElPTE5ZUjE3T1hQdktPdUx2VTZPTjZFa0Y4NVlvamQxRGFJUWg0UEhVZnF5OTdtYkpYWURzSFpGNktoR2REcjJ5bkkteHEycG52Q0I2b3QtaDVOeFNKU0dFTmFGYnVLTmM3R21KVzlFeFJlejVXV3RfbTZSdHFiZFNGWFhUb01JZW1sU2xJdFpsa3Q4R1Br?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Kitco",
+   "lang": "en",
+   "time": 1795527925,
+   "image": ""
+  },
+  {
+   "title": "Harga emas melemah jelang rilis data inflasi AS",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNR0pGSFVSLUxHc29KLW9JOW50VFdFRkctNWNUQkxrcTItM1BieEhCcnlLSHY2VUFXNEdUcVIzM29OR0tFSjZTajBLRzRUcWotZXFxX3E2eGNTT3FBWW1QV1pqQ0xOSHZEeFFNVlpkNVRmaHhmQWxKS2JGWlNmY1VDbzdFWWRhOVFNcWRORkNUbzNUZUc0c2c?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "IDNFinancials",
+   "lang": "id",
+   "time": 1795527000,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Melandai, Laba Industri Pergadaian Tumbuh 67,12 Persen per September 2026",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZGx1RDhGSWtkUkdGQ3ZfYUZXUHlHaTFfSFpoZ0hpc0NpUzZKOFhUbjFXSGVRSVRIWWYtVHpWSlBkVzhJTVlobk15bDhuRjBJRTlSZkxUZUpwRm5sdlRBZUFnMnJzUjIyY085NnZ1SUVJWlNiNld1a05DSUhZcGJUbzJqTWdSVUNocGJXOXI1SmZTaC03UnIweTR3YldQVTJNMW1ZdVVvdEFZSmc?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Infobanknews",
+   "lang": "id",
+   "time": 1795524682,
+   "image": ""
+  },
+  {
+   "title": "Gold price today, Tuesday, November 24, 2026: Gold prices improve, lift from 14-month lows",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUm1WdnRQTjdyY2N0S3VsSmR1WTliSS1xdXV1eTh1VUdHaURrcWVjcmw1bTVXNElvUkdFcDhEVjdBdnh2cnFSQ3ZERWFqUWI2bDBlZFBabWp6TFJFMVlHRzFYRnlUU3NudE4wbmRCREJLWUpjVWpGbEg3S1cyOExfUld0cWVldWktcU5SQ2RPSWhEbDV5WVlLNVA0Z0dIN05ocHJWS0hfMWF3c1RwWGJPejRaLTAzZVpBN1E2cmtYVlhkcG93Vl9wc2VydllMa29aNEk4cHZvQk42SXFtTXFfd05XS3lydG9ZN0xjU2xCdGg2bVE?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Yahoo Finance",
+   "lang": "en",
+   "time": 1795522701,
+   "image": ""
+  },
+  {
+   "title": "Gold Rate Today in India, 24 Nov 2026 - Live 18K, 22K & 24K Gold Prices",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9oS1doakpSUWg2blRCZGtNeWp5UXFadUo5cVZtTzd5bzBsdHNnUHlsTG9KVEN5UGVMaENmNVNDSGxrVmVLaHgtYWRPeEE?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Kotak Neo",
+   "lang": "en",
+   "time": 1795520179,
+   "image": ""
+  },
+  {
+   "title": "Fury Gold Mines Targets Eau Claire PFS by Q2 2027, Producer Backing & Underused Mill Next Door",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT1pBeGR3UDNPZzRncDRkQnM5SXAtZm0zNXZwSk1QTVpHOVlWSm1Wdk5NQU5zZ1JTUDN5LUxIYTNjcGl2X2hSNzllZUpZXzRFMUY4V3RfZXRLbXY5bmhoLUVpQTdHdExqRUxTRzB6THZhRlFqNnlRLWlZRkhheFQyVnZ4V3RMWXF5QV9hbHdJcGYxczNmVlUwQTBubnRTRFVmdlN4enpfZjFEZnBGUVlfR3ZEVXdJMGc4N0ZEcHNvVWc5Z3dq?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Crux Investor",
+   "lang": "en",
+   "time": 1795518364,
+   "image": ""
+  },
+  {
+   "title": "Tabel Harga Emas Batangan Antam (24/11), Cek Semua Ukuran",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeWdlUVhmaS0wR3F3WVdtQ0lNYXRDMFd0UWNvN0h4ZjZ0V1FhcVdiMzlTTTFRZnhHeTNlaWpUZDRSbU5mTDZCeVNiVFk0c0FmczJiVGMzVGoyb2dmVnlMSm0zYnZYcERfTEdKbEo5Zi1PLUZFUVFPY0NSR1JuaHpUNUtXdEd2NUtqTURxTEtGSFQyZ2s?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Pusat Data Kontan",
+   "lang": "id",
+   "time": 1795518021,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Tertekan Hingga Akhir November 2026 Pengamat Soroti Ekspektasi Suku Bunga The Fed - inforadar.disway.id",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUVY2cG93bHduanJoSUplRzROa01oTW1ycUR1X2VMMUNhN3pJM1ZTU3RmRks4S1hrYU5sZnEzOUw3cU11cmI4bWRKVFdIZHFvWVF5a1JxTDJVRldyWThZb2tTS2lEdWxValVfdkY4ZVFXTXpBY3ZqQXhQMFNGWmFseFgxTDg0REFvT3g3S0dxc3RLQzl4Xzc5UGRudWJUdHN2NG1hb0FvaU5YOVRNWkxEUTBUWjBDVXRDTC1uY0tYX3l0VExMdjdJUkVvQndOblg4S1NJ0gHLAUFVX3lxTE5kR3JCcFNSR0NmZGxfX3N3RlJjWGQ2R3J2blZ0dVA4SWhTb3dTVHRkQm02cFF4bnJLUS1lSXZIRUxfYnB1Q1A4UWxsUmxtbi1vTnpON3REdHo4Ny11d2NuS2NlYVZ6bVRISnFjVlZPYk5aSzJqa0g4aWg5NHdtc0J3ejNrbEt2RHNuWWp5WDJXZkNYazhRQjZZbm9iaFZLVW9ELXBHZXU2U2gyekFfSlZSSDFpVTRaWXk2NFgzZVB2Y19sOHF4NmRvSWZv?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Inforadar.id",
+   "lang": "id",
+   "time": 1795516380,
+   "image": ""
+  },
+  {
+   "title": "Gold Prices Edge Lower Following Sharp Recovery as Federal Reserve Rate Expectations Weigh on Demand",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRGZxT3NPYWNCNDZDVGdvU2oycXdGMXlSSHN0UGFyTU95YkVvYW5SOHYyQ2FGaDAzeW9QdlcwNDJpRVpLcG53OWtYV2JwQUJiOS1Pb3lHM2VUUnVfcDJRTXJTdHpGOGJtMW9Bc1RYMzdCMGFPQkdYYUJGT2VOLXlEY2V6Y3FPWnk3a3NkdkcyWDEyOGJ6RGJIdzl5REJWdUVJQ1BfbQ?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Yahoo Finance",
+   "lang": "en",
+   "time": 1795515672,
+   "image": ""
+  },
+  {
+   "title": "Alarm Pemulihan Harga Emas",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVWVtdDlLR2hfVVJ3N2lma3R4elhvekZxVFhYYkk4MGZhTVNyanR1ZHlFelprVnBuR0Y3a1FoZ21RQ19ISUh1RzRRelhhVzZxZ1kxZlIyTXdmZzh6N1ZvMVZRUDd2QWNWVlFNcGkyVVM5ZHFWUkJ0WEVoNmlDNWxYX2lGRVNkQQ?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Bisnis Indonesia Premium",
+   "lang": "id",
+   "time": 1795515120,
+   "image": ""
+  },
+  {
+   "title": "UBS dan Goldman Prediksi Harga Emas Pulih pada Akhir 2027",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNX2cyclVPa0ZhMmNTbWw5cnppaVU2ZjRHeU4zWFhDajh5Mms4d0lHa0ZBNXRzbmY4WGVHTnhsZnJtdWNybm05NE1ITkx4RGxlMUJvNzNWbjJvRGJLTjd2WVZXZ0FtT3dvaG5XVGZka1J1em5oc3lsTDl4MG55TWlwWGhXSE9TaDVreWhfZ2J1YzVyT2pacDhxMTZ3ZWVYU1RZWnlOUEJVdw?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Bareksa.com",
+   "lang": "id",
+   "time": 1795507362,
+   "image": ""
+  },
+  {
+   "title": "Emas Antam Menguat, Harga Buyback Melonjak Rp15 Ribu",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbDAwbWlLYm0zMXREMXRjXzlJbVJDOW5WTVVLYWJVcTVYM1BVOEoyaHNuMWRPTWdDVDRPYmxUbGpFTUxpc2U2YzVsYnBYVmktaktodGRuVXlCLU1lbHdSM1VRVjJXM09wT044Y1IxZWN0TVczVV9XcmQxM1JHRTA2OXhmTWh0UEhEWHNzcktFbGdWZ0hTZnVHWEdRUQ?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "TVRI News",
+   "lang": "id",
+   "time": 1795501620,
+   "image": ""
+  },
+  {
+   "title": "Gold (XAU/USD) Price Forecast: Bullish Reversal Targets $3,900 Resistance",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWHQwWnIxQVBoNEN4MDNUdDhrWXZTUUpVN2t5UmlIWTdTMktLMmk2eTNzMnF1RmdRRzZoYkdOMTVCa01XOGZpWnlHSWYzZHdPdFhvU2czUHRpdll5Wm1RSEc0dXB6aWRJUlpwZ05Zb0ctV1hLb0UtenZPMUV0SFlUYVZpRXlLQ0VRbTloZXUxd3lMUEZWcWFJN3BTX1kyalRfcWh0OTRhRExvcFp0ZnpPMEhZd0VhdGhPWVFF?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "FXEmpire",
+   "lang": "en",
+   "time": 1795499460,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas di Indonesia: Harga pada 24 November",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeHJRU1pfOUVCbElUZ2hIcGFOSVlOeGdla2lsbW9lLXcxYl92eWhkQTh5RWJ4V2pITXpoM1VlZVFySHZTSkhHalIxdnAyME5HMjYyQnBaeWY4RUMxYWRWVHBHSVJjWm92bEpYeUctVkRodDQwU2lfdWhSbHRCLWgwSW55MklPQWphRFk5VnF4eTVpN0xpUU9SdU9sSlRvaDdiOTZyUmxZVXVOcnM?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "FXStreet",
+   "lang": "id",
+   "time": 1795496690,
+   "image": ""
+  },
+  {
+   "title": "Gold price in Bangalore today, 24 November Tuesday: Check latest 24K, 22K and 20K gold rates in Silicon Valley of India",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQbzVMc2htbkdDajUxTV92N3dkdV84cklQa2ljdTZySHJzcHZIOVZOeDNaREVvTVNqdGExRUxPWFNZZVhZVDF3VDVKcVhUYXdaYXVSWWxISTRQTDZlQjBRN1NnbWxPcE5YTUVOZVRUcllKdFVpLUFmdlZSa3hRdVg1MlpZcExLVFlCUGJpQTZUdTJENFAtUmtoRmJXRzVMRnROSXhtbmJjdUtSTGlDOFFlTGZzWndBT19rV2NGenozWE1GNGN5OVNZcU1uZEUxV0xIOTVGYTM2eFI0aFJsdHQ2d0NjQ3NDOVdzdm5EdnFLejZadnR1RlFYd0ljQ2s0b2JtdU14LWpLdUx4SU13dE5FeUtB0gGXAkFVX3lxTE9TSzgwbU9USDd3ZmNtUFdfNEw4bjNfRkYwZU1IWURzWFpraE1Hc0d1ZlA0YlJBWGcxWGxUUVFkTWFnRF9RZlNSSXhEYkhSc0hPZlRMYkN4SUpUX3hHLTBPS1NSdUEzSHYxQnhCclRjV3o3UGNjc0xIX1V4a0p1RENoWjVON3VqbFhzS2VuMXRIM3FLTjFQNWRKaVNiNXl4R21CLTlLLUFZU1hCR1ZhMFU4b28xQVpzUDJNeENvMWc2bktuS3p5NEpWcWVrd2NyMl9HcFRLa09QUkRQOGpjRHBTTHRJWGY0QmVPWTlqNEJhT3RvbFZDMHpRNllOT0VaWm5ScHlHRVBkM3A2WW1ac3BaR04zSG1kRQ?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Livemint",
+   "lang": "en",
+   "time": 1795495984,
+   "image": ""
+  },
+  {
+   "title": "Harga emas Galeri24, Antam, UBS di Pegadaian Selasa ini",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeWgxcEtiNE5xT2g4RDY3SU1BalVjdHpzcGtRNnBFUFF0S2RZRzhHNnRQMnBQSWtUMktSRzBDQllhVWU5RGZUQ2VqcGxJSlVCTkFWYTNIMFVXclJpMWNwdXlnZmp2TnJPbUVsazMtZlVfbDBQUDNwOE92T2ZJZTRWbEh4Yk5uUW9KM3YybUs3UmgwVG1jdFpWSTA1NU0?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "ANTARA News Kepri",
+   "lang": "id",
+   "time": 1795495360,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas India Hari Ini: Emas Turun, menurut Data FXStreet",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOd2J6QWJ5Z0lsSW1LUDZhSWd4UGlhTUExdTVYWnMzS29kWjVsTXdkR3duLW9OUmRFQmZqNi03eTMwMFkzWS1tTGhNZjM1ZS1fYi0wUHNMZEhtenk1WjM3SDd2QXJ4aVVzc1ZYQk53U1NzdmFYc2dJSHQtd1ZhQWxKUHRPQ2ZsSWRNLWhmNDhuRUozWlpfdE5uUnZ4WmxqbUNBMWUzR1N4QQ?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "www.fxstreet-id.com",
+   "lang": "id",
+   "time": 1795495159,
+   "image": ""
+  },
+  {
+   "title": "Gold price in India: Rates on November 24",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSlFKSE9lY0xoTzhQcGZyWGxVeC1UNGxsZ0lBVklEbnRIQk9KS0ctZVpENTB6eDMyWjQ4SkpNS0tSM2VIWHItZHdsZi1KZUhTRDlwdmo0c0djdFhDQ0pFSlRYcHI5Y3FrbFNUR1h3M3NSa2Fvd1BFaWpBQ1ZwMlhEeUFWaThobk5zbFdZZTVBOEhLOWE4elJkb0xxN2RpdVpaZkk0QU1B?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "FXStreet",
+   "lang": "en",
+   "time": 1795495148,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Antam Hari Ini Cuma Naik Tipis, Kesempatan Borong - GenPI.co",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbVd0NXptS2dKN0ZDWW8zMzFmMXR4X2E0YlFwUFgtRlprbVJ4ZjQ4SUFBZHRLUVE0Z2Z4MmtfWUVDSl95WEpTY05pSDJzMDVLNWdQMkVFbzF6azJnZFZ2cjdNZUhLZzlUVFZIM19vNndyaDY4eV9TOEpURGpORGdENko3TmpmMVF2MmUyX3NIYkV5UmZmWV9rMk1EVdIBoAFBVV95cUxNWThpNm9EZWVCN01fWjJaRU5hMkExel9fSDNGYVh3ekM3TF9LVThuX1h4UmhadzdlOFR0R005Z3NTMm1Qa0k1NVIzWTlHTkJfaUFha2RoS1U1dE1Kc3A0aDFyR0dIakJteXZ2REpGWmo1dzNBcTR2QTRTR0JTVkp3ZHNoYmNKR2FIaHdnaG1KZDRCdWYtVFUyTXFaSXN0ZEp5?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "GenPI.co",
+   "lang": "id",
+   "time": 1795493347,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas dan Perak Terbaru Selasa 24 November 2026, Ini Daftarnya",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWnJ4Y01xR1BDem14cnR5ZEJCMjgtSkRMTUhMZmY2blBmTFF5QWpIS0gwMTlxc19IZjB0QVQtbU5PQldLNkhPT2ZKRUIxeFdpNUVEVUpDWXg0YXN2ZW1WQVItRzU5cm9HeWZFTkt6Smc2N3Q3Vkg0ZnlsU29OZmR1UFk0MWRMRkZEb2h2NXhha0EyRWRWanZzZW5lWlVGYXF4RVZtYWlQdlZIckd3SVE?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "JPNN.com",
+   "lang": "id",
+   "time": 1795492800,
+   "image": ""
+  },
+  {
+   "title": "Harga emas Antam Selasa ini naik lagi",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUnZQeVphNTVFU3V0OXFybUswSXpfWEVnYTBQdTZQT1h4TW1VbkNMeVlvNzkyUnZ3YmNpcTBpU3ZBN1RCellSTkNhVEFxdi0tSnpTTlNKaXlJNVVJSF8wYVR3bDQtOFp1QzRfc0RKMWI2MlJwVUwtZjBwdENXZ00wSGlkMlc5bDg?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "ANTARA News Kepri",
+   "lang": "id",
+   "time": 1795492675,
+   "image": ""
+  },
+  {
+   "title": "Gold price volatility weighs on housing and auto markets",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaGdFWDVPUE05dzRzczBDbHRscE9FOHd6U2IyN2d4NEo5ZGZIODRLZG9SS1c5V053czN0NTNndFhTRTY5UXdWSXNyT3FVOHAtVXJnTS1yaWx6UDFJQXQyd0hpX0NaSDVhdGd2b19vcE5yUWtpdms1YjdOSnVONVRpMl9BWjFTTm9yMFVIRkhDbE9ySXlLMmZpci1yVlA4dw?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Hürriyet Daily News",
+   "lang": "en",
+   "time": 1795492501,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Antam Hari Ini Naik Tipis, 1 Gram Rp 2,507 Juta",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdE40ZjRpb1JJbEJ2c3B5cDZ0ZF9vbHNvRXNyLXBhTlJpcmM1OFBHem9IcXdKWEoydlV4d2JHMWlkNHNOaHdCcW9ZdHRsbkhfYmNTTEdldXVVZEJEVEowbGNSa1B0dWNVTDBkU0swaUJ0cVdtWG9qemhBZGRVZVB5RDhiNC0wNV9fUDZhUGRpRGxXSXdiczdVZUFVajVfS2kzaXlv?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Bicara Surabaya",
+   "lang": "id",
+   "time": 1795492020,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Hari Ini 24 November 2026 di Pegadaian, Antam Naik Rp11.000 per Gram",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOY3JvZVh1N2dNbnR5R1poT2lTUzFBMGZPQ3FSYUNhLVJ5UVVDTTU3b3FnSHJfV3BDYnctN09Ka2psbGVMRlZnSklpMFJLOFVUOHBzNU9UdlRkYTBmRm5haUkybEdFNXUxUXAwQ0hwRVJKdkFpNVBUaDhvUE1QOWk4d1F4RlNFVW1kRFdpMm1mYy1paWdqa2Z4R3ZCLUdlaFRjYzJNMEwwWUhuQnVRdUZBXzM5YzJoRjdlMUdIeFlrSzVha0ZLUUp2SkI0VDM1OV9xZHRweWdWNFAxdmE5cjlzeWJR?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Databoks",
+   "lang": "id",
+   "time": 1795490385,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Antam Naik Tipis ke Rp2,507 Juta/Gram, Buyback Melesat",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMHMzekEyNTF5amhpS0pZcDZVWnEwaGtiTDk2QUgtUnA2RUJRcWxrcndvTHVtakh3aTJkV1NObUhKd0RjaHh0Zk5PYVY3ZnNQeUo2b2JUQ1M0TjFyd0Q4SnVHMWllMmR6bjNKRjhYcVA4S1FwdktBVi1BMXFYZkQ1ZUpuaWQ3S2RtVEN1c082NWdBV29Xam5yN2V1S1UzRVJCWGZOSWdOR2xaLV9fVnI0NGtB?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Validnews",
+   "lang": "id",
+   "time": 1795490100,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Antam Hari Ini 24 November 2026 Naik Tipis, Ini Daftar Terbarunya",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOY3hmcnRnNG9kbW9HYmNIT1pEN3RmQ1pXNVp3MlRHdVI0SG1oR2dNM2d6LXp4VjBLekpUeHdMNEk0THVVQ0tfRFhXbHFMRFRNWkl6M1NmS2ZlbENvRUVkRWR5dnpDUW1ISVE2cjkySDZVUVJKcGdsQnprS1BPN05Ya2N0eVVWUk5mZlNIeXdzei1Ybm1qMHhRc2dBcGxtV0FsTERFcGcwSFY1Z29GVWM3dldOcjktX09JM1JkeFJOUm5rWUc1?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Kompas.com",
+   "lang": "id",
+   "time": 1795489920,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Dunia Anjlok, Serok atau Jual? Ini Kata Perencana Keuangan",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQTZQMkV4TWEyTkFEWjIxM1FSS1cxU0doTXRXNFhabFUybTJMak1ZRTZ0dURtYy1fSWNld1VnUFJDZ2liRlRLVFFPMkI1WE9WT21HQVp6NVMwcDB1UnBzaF96NENwRkJ0NUdXTTJzTld5NERfMlNIUy1sZXg1MHdVUWRZYnlWYVRJWHA3MVhlOGYtTWFmQTVjbXgwMHlUZGRUYWZBNFFHd1lwdEVhMTVVeU9Tdm44U0tSbU5KXzFxT19IMzhURGR1emNn?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Kompas.com",
+   "lang": "id",
+   "time": 1795489200,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Antam Naik Rp2 Ribu, Dibanderol Rp2,507 Juta per Gram",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTUFxQnY0WGJvOWExanhtb3ZzSWo1endwa1VNY1J0amtPMWRrRUV1Y2N5NVBnakN2RjNVUGoxRUwyT3BOekIxbWhMSXdZaTZ6WXBUeDFKSEk0TnotMGg2UWtBbXhTRDZJUjZEaXhPUUJlOFE0UjJmYmpBSEgyRTBnZnhSdXBoMTlQWHd6OUhNRTd1bDlWZ3JSdXZxTUtJeXFSSm5FUWJXbjBMWUdVekJ5YWlicFZqUnhESkhFdkZn0gHDAUFVX3lxTFAzTjBqMEp1VEg5NGhJd0JiOGhWcVhGVFJqQXNwZ2tXVmVBYW1ZdERoRHJfQld3d0dUTTNPUzVQdzgzdXYxTVZ2NUJrUUlROTE0TEU4ZFZpVVpJZVdhTFBMM2lqSV9TbkxqbjZiYkV3ZEJPb2xEbk9kaWFyV1M5ZmRMMEFtZS1KbFRwaExaU01DZHNoUUJEYzJRV0hZLUdfN0huUUNiMG1jV3JWcFIyWkN0ajdoeThQYTZwWWtXSWVtaG9DRQ?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "IDN Times",
+   "lang": "id",
+   "time": 1795488519,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Antam Logam Mulia Hari Ini Naik Rp2.000, Buyback Rp 15.000",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPakl3WWdId3E2ZGV1NVNFekRrZ1F0ZmhGWEFsYm5qY1ZUOUdib3lUR0JSUlNzMXFlam5RcE5oOUwxTUU4OXRDSjVTa2RyMU4tZzF2cVg4elNKNllOdEp0Vkp1aTM2aHR0S3Q2VERWcFVldDNoUWN6TG1ySFBTa1kzT1pCaFZQdGxJSVM2aU5RVmZ5UHR2MkRFWFdabUtucHYzclItX0w5WlRJM2FreWlOeDNfalNEMFBQRFBBaHpfVDJ4dmlwcmJIa2RWSQ?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "CNBC Indonesia",
+   "lang": "id",
+   "time": 1795487111,
+   "image": ""
+  },
+  {
+   "title": "Harga emas global pada Selasa (24/11) naik ke US$3.670 per troi ons",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeE1LQW81cm8ycDdXWnJGZ1BSc25kMWF6RXBadkRpVWc4TTdmSWhVR3pLUnZfQmpLdnp2X3RNMExWOXBoekRfVGtGNUZqUW55bmlyZ2cwZlNQVF9zekFMWUlvRUd6TzFDSzNXZ0dsQlZnZndEZ1o0TVMwWmhxMWQ5c1VFbVVnSEdnSFdiREZpTlNNOUlZTDZZYy1WaTd2S2JQSXBjTHV2amlCakU?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "IDNFinancials",
+   "lang": "id",
+   "time": 1795486800,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Antam Hari Ini 24 November 2026 Naik Tipis, Sekarang Berapa per Gram?",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQS1OZGx4bEdYSEJ1ZW51WWM2aUhwYkFQOTg5OHNWV0EtTDVnMVpPSzU2SlZlNHFqVzRyWm1GLXcwbnhjS1BUTUFBR0FrOTBnZmFVZHZHdTNQNTE0MjNJMmtiNHJ4bFUxTEQydXBfd3E0OHhpeUMyRmtyMXF3MWJNU0s5a2hhZ0J1TVBwSzFrWlRGQWc1bVR5ZHY0b2JnNG5nRkJOUlV2QUpRdmJQa2JLVXlTVW3SAawBQVVfeXFMUG1kYWRLNksyUklNSkJzNGxqbXJUY1A4eGlxdjhXbFAxaXlia09DYXhMSXQteWR3Q0Eyc1l5OW9Fa1lGWFVBYTVqZHRXUW9ZOVFhOUhRcURKMXNMWUhDUlpNT3pTZGFlVVV3ZzZHelJxWGlQVFl3WDFXYmEtSmM2UW85M1JoOXZOeHVrVm5kaWFHSEVFNGJ0UzlUSVl5ejRqRmRiRXNqV0hGZEdjUQ?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "kontan.co.id",
+   "lang": "id",
+   "time": 1795485765,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Antam Hari Ini, 24 November: Harga Naik Rp2.000 Menjadi Rp2.507.000",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOanh6WncyNjdFSlNyV2E4RGlZNlYydjVSanBYVVp2TnJZNzU2N2E5V2RVVE9yUVc2aWZJQkNIZXgta2tqRmVJZ1g0S0N4RkJRSGp5OXFNcW9GbUd6Wms0Yk5JWVFzS3FHa0dVcHFvREJkYl9YeWZibS1RcVpIZm5wbkFPQ0R5eC1RNC1ZbDJpNXBVZ1R2ZmZWVzhXdlNDZnBqSmVrcldUdE9JZlM2UVhBMWxwaGhqa1BpR3Bv?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "FXStreet",
+   "lang": "id",
+   "time": 1795484168,
+   "image": ""
+  },
+  {
+   "title": "Pergerakan Harga Emas Perhiasan, Ini Daftar Rincian Terbaru",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUTRLOG1oMDBUa3oyc3lNdkZSTnNWaXZ6Nk9EUlVSRTVlRy1aVUJPdDNMZUZ0d24zNWZLX1BYbHR4dFJ3VVdwZzRqYlVSMzJnVmtjTEFhdE9qdnZZZmFMRWVwOUhXaWtVcjVSR1ctRGtDa1YwaTBqSUFkVGxSZFZ2c21zZC1WZ3paNHhjX2tIM25tT3FUM1Y0?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "investor.id",
+   "lang": "id",
+   "time": 1795478400,
+   "image": ""
+  },
+  {
+   "title": "Rekomendasi Harga Emas 24 November 2026 : Terbebani Prospek Kenaikan Suku Bunga Fed",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbzFsNUhleUU0WFdKV3VJaHljSU1nMTJ3OWExVnlWa1lyVmRGakdjTEx5MkJRTFlNaGtUVnM2bHQ2T1ZBdmNMMlBzSlVFSkthWlBfa2RuMVB3OWNSckM5d0xvb1cyenozbmw3enlIMEtZeGtLVmhmVVAzbDNsYVRkQV90ekJvNXlrUWppdWJiOWI5aG9Ya0M5MkxOVnhXSE5UUk9vMWFlUWxTSWlYRW9yQWJ3ckU0UXQwNUpCeHFjcUhsVmc?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Vibiznews.com",
+   "lang": "id",
+   "time": 1795474551,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Antam (23/11) Naik ke Rp 2.505.000, Buyback Melonjak Rp 40.000 per Gram",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQjF3R0VOOUtObkcyZ0ExT0ROdjhnWlBLVEJJbXZrTGh3Y2JheVpXc1YtRVItNmpiZlc3enR1Rzk5bnVmWGZZWGRUMmppRmtjVFFPcUlPcGlZR29la2NlR1ZIellQcXA0bndvZVpwcElhUU54dnhsSEtRLUE4UmFOcTRuUmliQ2ZmWlhTS0NWcEVvcEpib1drUmZkVkt4cHhROGRZNmJvb2JGMTNibHpfcA?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "Pusat Data Kontan",
+   "lang": "id",
+   "time": 1795472438,
+   "image": ""
+  },
+  {
+   "title": "Gold price today: XAU/USD rebounds as banks assess 2027 outlook",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nRnY3U3BWSGlpcXVMckdxVC03RHppZU1fdlU5MlNna19ZbmVqQjVfZEN5d0FodFM1VHdkcGV3b2dGVUdrVlhnZFZsYUZlR19XbjgwY0NmNTFuYVVHTk9zVURhLUY?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Beinsure",
+   "lang": "en",
+   "time": 1795469899,
+   "image": ""
+  },
+  {
+   "title": "Gold Futures Rebound as Nvidia News Lifts Markets",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQ1lDUDJKYnppMTFtNDdCYUoyWkVjdTBJYWpOaWY3OHFRUTMxT0VSUTR0UWN4SEFQVVZJUlhqNjU4OFlDeXdHZkh4ZUFFSTNzWXhEcWpRQ0h0eVk3Q1ZmU2I5OURqdnhEc1hlQmRDcGVVLXZ5YW8yTWQ4dWYwRHE4V0dLTGZhd0p2S3A1V0l6MUs4M3RXaFh0TlJDZUdQYkdPRWNoclFEMl9sY2JTQzNZcDJn?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "WSJ",
+   "lang": "en",
+   "time": 1795465149,
+   "image": ""
+  },
+  {
+   "title": "Gold Prices Rebound. What the Charts Say About a Nasdaq Bottom.",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSDBFMXd2R3VnQm1rTzJYX2lJaHRQblJiRkV4X2x6QTlNY1A5cENqNjF0WTdGTUM5bndFcVNRVV9zYmp5Ti12ZlJ2WU9XOVcxekpsZ2cwcl9fa2VoT1RyaGRHQlktX3pySV8tMC1ubzRLTXVlSmVmNFg0b05hVUVtVlZiUURNMUh0QTY3T1Jn?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Barron's",
+   "lang": "en",
+   "time": 1795462560,
+   "image": ""
+  },
+  {
+   "title": "Gold is having a rough year. Does it still belong in your portfolio?",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0l5TjFXc1RMcVYzV05tYS1jRUk4NlRSaHFmaTBURHhfWlFMWG5sQkkyLXpIaXMzcld1U0JRcHYzSHhySlYtZVluZktpcjM0WS03RGhvOG1OWlAzc0phakpMRVBKSWxSTXYzbTlXZ0I2TTNlTUZxRHZFekV3NURHTzVvQ0p6QW84azF1eTFxNC16NnlBbUJhdGhGVmdaOUFmYk9ta2RTOEZYbExhMEplUzdOVDVyd2RpNnEtcVZKVGlaQUNMdnI2NGRQeTJDeHplSWl5T0FCQk9QZw?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Yahoo Finance",
+   "lang": "en",
+   "time": 1795456012,
+   "image": ""
+  },
+  {
+   "title": "Gold price today: why did gold jump on Monday after its worst week since March?",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcHJ3T1haZDFoS1A1NjBSMnBrMUxTZHZnMUFuWDBLOXF5SFVNamQwZkF2MmhHeTZDX2xjSmxMT01ubjk2aDNmSnhrWmZtal96TF8zU2lHSlo5QTg0YWtZYWg4bS1SS1c3U19mR2p6THJ6YUZ5NDBiSG0tbmNKNHJ1VkVlT3d6bXU0a3liMlprWDJqR0V1RkpRR2ZrR1BXMlp3eGt1bEk5d1U2TVdseWI0TFln?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Nacionale",
+   "lang": "en",
+   "time": 1795450522,
+   "image": ""
+  },
+  {
+   "title": "Gold’s Price Jumps 5% as Investors Buy the Dip",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SdUtpUkl0VFBZaE9GX0VOck9pMF90WGNEdU53MzZfaVgzUEROUGdGUnVZTUVXeV9OTlE0T1c3WkRlZGNxQUs5U1dwTGdWZDNodW5ndmI4UE1CbmI4dVpYZi1jSGpGcjJuNVR6WGRmR0xuT0FwRndKZDlXcUR4a3M?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "TipRanks",
+   "lang": "en",
+   "time": 1795450496,
+   "image": ""
+  },
+  {
+   "title": "Gold prices jump 3% as bargain hunting overshadows slowing U.S. manufacturing and services activity",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVnRWWWJiS0Fpd2k1dGZkM0U1aFc5RGhvQ3Vod05hN0N0X3JJdnl5Nm5JbkY0cW9RczI3T2NDZlloMGtwWV9RNWFmd1FGdl9JRUdIMC0xTzVrV3VIemZQWXRlVFhPSVJEaUFRQzB2MFNydUNERVk4ZktGNnVnMDFyYjc1UTMzMWlSTHBDaTZiLVc0MGJrN3NQd0FPeUhhREdYWWNxUGlfQVhVSDFORnQ4cmdrUUtjaTJNVUFtZTNn?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Kitco",
+   "lang": "en",
+   "time": 1795446026,
+   "image": ""
+  },
+  {
+   "title": "Gold SWOT: UBS and Goldman Sachs see gold recovering by late 2027",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMXRRUnZHY1k2NWpkTUZ5ZXE2VXFja3FxNGJLcWw1OVZTWklJei0wd2Y4STM3Q2ZndTBZbEsybkJ1UGsyeExsc3pyUEdmbGNUdldTXzRqdDFwNXcteW9HT0FSYzRlWU50QzNGVkFIUEZqSmx0RnJlRzAzeGVyUVp6MjhtNUVFVHh4V2ZoM2VuWnctaUsybHJIOXFQVEtxWll0T2xSQQ?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Kitco",
+   "lang": "en",
+   "time": 1795445312,
+   "image": ""
+  },
+  {
+   "title": "Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPenF6LTV0TWdncXg5WDBQNS1Dc2lSVEUwNmpsRzR0UGg4a0VOM21NN2hTNnN1Mk1fZDhmcWs1WU41UW9qcUFieEJnemYyRTdhZy1hakhLbHRXemltSTFVTnBFaEhLdDR5LTYyeElnTjBKdEVNeUFXRnFEQlh5bWllNU1vOEw3eHlaRXZBZzV1WlNXUWd6R3BHdmlTajdyZUJueU5vNTlCUmhvclZtLVRlamJyel9USGM?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Kitco",
+   "lang": "en",
+   "time": 1795443484,
+   "image": ""
+  },
+  {
+   "title": "Gold Price Forecast: $3,500 Bounce May Face Selling Pressure",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQnRoWE1pMWt1cjhrV0ZCNldXZmVObEtEQnNFb0xWQXJaeDk1NGtYbEU4dndSU1BrR184dEV6VXUxY091dXdKZjJfT2VDbkF1eHgzVGRCY1Z6LXBuNmVESWFSODlpM21kTDJrcF9TcEdLbGtWY3N4bjNPblZXT19EaVpDQlBDOTRVb0JWb2lfeDZ2T1pmU3d0X2Rvcy1oaW5IQzlLY0VrRTVDd3Qy?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "FXEmpire",
+   "lang": "en",
+   "time": 1795439910,
+   "image": ""
+  },
+  {
+   "title": "Gold prices today, Monday, November 23, 2026: Gold prices opened at lowest point since 9/2/25",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaklyYWhvcmQ0ZjI1RDFmdmNycGVkaTRlWEs4TEVMTS0xLWFabjhWYU9zWnNBS01uY3g1NTJ2ekpSWXNSSXNKQ19MUWE4ekY0T1AyRXdoX2tsdlBRSUFUd1dWNDNVZWMtTjBLQ1lDY04zT2llMzFLV05XSDdQNWFMaDJYZk1oVS02MF9yZFdVRG0zbGhoWWV2aXpQYnFVUUwwRy1vTG9JejFuS1lkVFZ4U3ppSTlzMy1WSHVCTjkwVEtXamNreDBQNzgwVTd0eFRoZ0F3SzByWXo0WGdtSnVEcG9zZkVXXzc2TG5qTUFHZzBXWm9VNkE?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Yahoo Finance",
+   "lang": "en",
+   "time": 1795436655,
+   "image": ""
+  },
+  {
+   "title": "Gold and Silver Price Forecast: Strong Dollar Caps Rebound Before PCE",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNFYwUF85MUc1TlkxNWxTOW1DYjFSc2pJcGZIOTBMY19taHAwMjI3d3NJaEtOVUdTYU8wYkNodUpXeTFOMDFBZGtRZTExdDFvcUljZ05WQ2pTTE91R2hadDBvMmk3TjNDNjZvdDNDUk9GWlRCNXZFZzBnbzgzaEpmWWRFWDBGVk5tdy1jUDJGdDZhVWNVX2JGdGpTQUtJMUFnaTdYLUp2UXhqdUwydno2U2hJODkySExVYjJj?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "FXEmpire",
+   "lang": "en",
+   "time": 1795429621,
+   "image": ""
+  },
+  {
+   "title": "Gold rises as bargain hunters step in after steep weekly drop",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcnBFWkZLYUFtZG40ejNhc0xINGhEOGZWSnl2M1RabDhRbUstel9yOEtXTTczcW44cEw3b2lvbEMyaExOeDRLNnRWVFdOMU4xZDQ5bkd2YlJaUklBTWNMSDlFWDVZd2VxUEtpbXBqVUlMY3dDM0dmWXVfOW1CWG9oUVJIZ3BhWWltclFMZVF5ck1oZ2pUVUMwVWZVMVhlU1FrbmZuWGpLSW5jMUU?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "Reuters",
+   "lang": "en",
+   "time": 1795412940,
+   "image": ""
+  },
+  {
+   "title": "Gold Price Forecast: XAU/USD rebounds, but is it out of the woods?",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVjhRdHpuX1BTX3k2bnp2d2l0ajRsVnc1TjZKd1NybjdoUndxa0U1S1d1N0lYOGNoeFozaWR4OEtFQ0Z3NVdIV2ZLa09xVVhUYXVjWHB6UEhEMDBqaW1TTVBnZk5qRmpIdzdHbHYwd3JiM3lrMXlPLWNzUjBDeG45MkJfNHJNWHFpb2tjM2NjVHQxdGVJM3F4MTBZVGtoa2ZMOTY4VWFMcWFaUGs1LU9J?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "FXStreet",
+   "lang": "en",
+   "time": 1795404955,
+   "image": ""
+  },
+  {
+   "title": "Gold Price Forecast: Selloff Echoes 2022 as Fed Hike Fears Grow",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeldGOUZfc0ZTLUtjTkpuLUN3c2lpYnB1SEIwRS1aVnZ2bGNQQndUblBPdG5yZ0NIZDZLMGNxWFRYSDdEaWNXZGVLUmhMWnRWWVoxYVJJck9qZkFaRVB0VzRMajA4Slk1Z2lsVWdOQTZfWmlFbFRFXzY0NndkVUJfaHIxeERYT0IxaDJGRmI4M20zdWRyQXZxcUxsS0w0MGJzYzE2UzF6U096eUROM1ZJRjl1MA?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "FXEmpire",
+   "lang": "en",
+   "time": 1795399062,
+   "image": ""
+  },
+  {
+   "title": "Harga Emas Coba Bangkit Pekan Ini, Tapi Musuh Besar Ada di Depan Mata",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbTRrZEF4WnlVdTYzeFJtZmtkbkNlSEpURkhxc1FzSlA4S0ZBU3JaM2RTTjNYV0ZaUGEtWVFhYUszcmxEeEFDN0FER1p4QjhldVFONGhSOTVfcUtmMkxVUE94bmQ4TEtuSXpNaUVLLVRfSV9BWnNTOHlIcmR1N2lFbnVpajY2SnNlakJMdG5LNFlQbHY0YTY5MFdPVVRLaDVJa241NEN3cUd5Nng1MkQ3Y3F3aXlLSFd4Y1hvVEdLbTlzY0E3VHA5ZDVZZWdWUQ?oc=5",
+   "source": "GOOGLE_NEWS_ID",
+   "publisher": "CNBC Indonesia",
+   "lang": "id",
+   "time": 1795390506,
+   "image": ""
+  },
+  {
+   "title": "Gold's bad year is getting worse. Why its price keeps falling",
+   "snippet": "",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBzVTZVem9vcm02QmpsTmpncE9tZVV6MUJqMkJyM2lUTUhPNmlFdThJTExTS193aWV2LW9PTmVjQjdaSTZ1eTNYbVF2Q1U5QWtyaHBZX2xQcFBNNjAxVW9zWjlMR2ZQSkcyNWJCNnNTaml6RU9KTUdHYkRn0gF_QVVfeXFMT0pFQVJ0ZWI5Q2xIaXRteFVKMzByRWdYNWRJa2dnOXVnOU4zUzgxd0JGRzdkTkxIMlJhUm5GXzZVcVM5enluNXhFQjdheUlkbzdITjI0U3A4N3lMZEJZcDdrdndzSmRjYTFjbDQ3a2FVUTAyd3dzODQ1YTdnM3dfbw?oc=5",
+   "source": "GOOGLE_NEWS_EN",
+   "publisher": "CNBC",
+   "lang": "en",
+   "time": 1795095472,
+   "image": ""
+  }
+ ]
+}
