@@ -11,17 +11,51 @@ import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 
 # ===================== KONFIGURASI =====================
+def gn(query, lang="id"):
+    """URL RSS Google News untuk satu pencarian (spasi ditulis +)."""
+    if lang == "id":
+        tail = "&hl=id&gl=ID&ceid=ID:id"
+    else:
+        tail = "&hl=en-US&gl=US&ceid=US:en"
+    return "https://news.google.com/rss/search?q=" + query + tail
+
+
+# Tiap sumber punya daftar "urls": dicoba berurutan, yang pertama berisi berita dipakai.
+# Taruh RSS portal langsung di atas (ada cuplikan + gambar), Google News di paling bawah.
 FEEDS = [
+    {"source": "KONTAN_INVESTASI", "lang": "id", "filter": True,
+     "urls": ["https://rss.kontan.co.id/news/investasi",
+              gn("emas+site:kontan.co.id+when:3d")]},
+    {"source": "LIPUTAN6_BISNIS", "lang": "id", "filter": True,
+     "urls": ["https://feed.liputan6.com/rss/bisnis",
+              gn("emas+site:liputan6.com+when:3d")]},
+    {"source": "DETIK_FINANCE", "lang": "id", "filter": True,
+     "urls": ["https://finance.detik.com/rss",
+              gn("emas+site:detik.com+when:3d")]},
+    {"source": "MINING_COM", "lang": "en", "filter": True,
+     "urls": ["https://www.mining.com/commodity/gold/feed/",
+              "https://www.mining.com/feed/",
+              gn("gold+site:mining.com+when:3d", "en")]},
     {"source": "GOOGLE_NEWS_ID", "lang": "id", "filter": False,
-     "url": "https://news.google.com/rss/search?q=harga+emas&hl=id&gl=ID&ceid=ID:id"},
+     "urls": [gn("harga+emas+OR+emas+antam+OR+investasi+emas+when:3d")]},
     {"source": "GOOGLE_NEWS_EN", "lang": "en", "filter": False,
-     "url": "https://news.google.com/rss/search?q=gold+price&hl=en-US&gl=US&ceid=US:en"},
-    # Tambahkan RSS portal lokal di bawah ini (ambil URL RSS resmi dari situsnya).
-    # filter True = hanya simpan berita yang mengandung kata kunci emas.
-    # {"source": "LIPUTAN6_BISNIS", "lang": "id", "filter": True, "url": "ISI_URL_RSS"},
-    # {"source": "KONTAN_INVESTASI", "lang": "id", "filter": True, "url": "ISI_URL_RSS"},
+     "urls": [gn("gold+price+OR+gold+market+when:3d", "en")]},
 ]
-KEYWORDS = ["emas", "antam", "logam mulia", "gold", "bullion", "xauusd"]
+
+# Filter berita emas: cocok per KATA (bukan potongan kata), jadi "kemasan" / "pemasaran" tidak lolos.
+GOLD_RE = re.compile(r"\b(emas|antam|logam mulia|galeri ?24|gold|bullion|xau(usd)?)\b", re.I)
+STRONG_RE = re.compile(r"harga emas|emas dunia|emas antam|gold price|price of gold", re.I)
+SKIP_RE = re.compile(r"medali|generasi emas|indonesia emas|emas 2045|gold medal|golden", re.I)
+
+
+def is_gold(title, snippet):
+    if SKIP_RE.search(title):
+        return False
+    if GOLD_RE.search(title):
+        return True
+    return STRONG_RE.search(snippet) is not None
+
+
 PER_FEED = 30        # maksimal berita diambil per sumber tiap run
 MAX_ITEMS = 150      # maksimal berita disimpan
 MAX_AGE_DAYS = 7     # berita lebih tua dibuang
@@ -29,7 +63,7 @@ SNIPPET_LEN = 220    # panjang cuplikan (karakter)
 # =======================================================
 
 OUT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "news.json")
-UA = "Mozilla/5.0 (compatible; BrankasEmasNewsBot/1.0)"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 MEDIA_NS = "{http://search.yahoo.com/mrss/}"
 
 
@@ -66,7 +100,21 @@ def find_image(item, desc_raw):
 
 
 def parse_feed(feed):
-    root = ET.fromstring(fetch(feed["url"]))
+    for url in feed["urls"]:
+        try:
+            items = parse_url(feed, url)
+        except Exception as e:
+            print("  gagal " + url + " : " + str(e), file=sys.stderr)
+            continue
+        if items:
+            print("OK " + feed["source"] + ": " + str(len(items)) + " berita dari " + url)
+            return items
+        print("  kosong " + url)
+    raise RuntimeError("semua URL gagal atau kosong")
+
+
+def parse_url(feed, feed_url):
+    root = ET.fromstring(fetch(feed_url))
     out = []
     for item in root.iter("item"):
         title = clean_text(item.findtext("title"))
@@ -91,8 +139,7 @@ def parse_feed(feed):
             snippet = ""
 
         if feed.get("filter", True):
-            hay = (title + " " + snippet).lower()
-            if not any(k in hay for k in KEYWORDS):
+            if not is_gold(title, snippet):
                 continue
 
         try:
