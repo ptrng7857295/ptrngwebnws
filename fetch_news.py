@@ -23,22 +23,21 @@ def gn(query, lang="id"):
 # Tiap sumber punya daftar "urls": dicoba berurutan, yang pertama berisi berita dipakai.
 # Taruh RSS portal langsung di atas (ada cuplikan + gambar), Google News di paling bawah.
 FEEDS = [
-    {"source": "KONTAN_INVESTASI", "lang": "id", "filter": True,
-     "urls": ["https://rss.kontan.co.id/news/investasi",
+    {"source": "KONTAN_INVESTASI", "name": "Kontan", "lang": "id", "filter": True,
+     "urls": ["https://keuangan.kontan.co.id/rss",
               gn("emas+site:kontan.co.id+when:3d")]},
-    {"source": "LIPUTAN6_BISNIS", "lang": "id", "filter": True,
+    {"source": "LIPUTAN6_BISNIS", "name": "Liputan6 Bisnis", "lang": "id", "filter": True,
      "urls": ["https://feed.liputan6.com/rss/bisnis",
               gn("emas+site:liputan6.com+when:3d")]},
-    {"source": "DETIK_FINANCE", "lang": "id", "filter": True,
+    {"source": "DETIK_FINANCE", "name": "detikFinance", "lang": "id", "filter": True,
      "urls": ["https://finance.detik.com/rss",
               gn("emas+site:detik.com+when:3d")]},
-    {"source": "MINING_COM", "lang": "en", "filter": True,
-     "urls": ["https://www.mining.com/commodity/gold/feed/",
-              "https://www.mining.com/feed/",
+    {"source": "MINING_COM", "name": "Mining.com", "lang": "en", "filter": True,
+     "urls": ["https://www.mining.com/tag/gold/feed/",
               gn("gold+site:mining.com+when:3d", "en")]},
-    {"source": "GOOGLE_NEWS_ID", "lang": "id", "filter": False,
+    {"source": "GOOGLE_NEWS_ID", "lang": "id", "filter": True,
      "urls": [gn("harga+emas+OR+emas+antam+OR+investasi+emas+when:3d")]},
-    {"source": "GOOGLE_NEWS_EN", "lang": "en", "filter": False,
+    {"source": "GOOGLE_NEWS_EN", "lang": "en", "filter": True,
      "urls": [gn("gold+price+OR+gold+market+when:3d", "en")]},
 ]
 
@@ -133,6 +132,9 @@ def parse_url(feed, feed_url):
             suffix = " - " + publisher
             if title.endswith(suffix):
                 title = title[: -len(suffix)].strip()
+
+        if not publisher:
+            publisher = feed.get("name", "")
 
         # Deskripsi Google News hanya mengulang judul: kosongkan agar tidak dobel
         if snippet.lower().startswith(title.lower()[:30]):
