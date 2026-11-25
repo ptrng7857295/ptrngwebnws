@@ -11,38 +11,65 @@ import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 
 # ===================== KONFIGURASI =====================
+from urllib.parse import quote_plus
+
+
 def gn(query, lang="id"):
-    """URL RSS Google News untuk satu pencarian (spasi ditulis +)."""
+    """URL RSS Google News. Tulis query apa adanya (boleh spasi, tanda kutip, kurung)."""
     if lang == "id":
         tail = "&hl=id&gl=ID&ceid=ID:id"
     else:
         tail = "&hl=en-US&gl=US&ceid=US:en"
-    return "https://news.google.com/rss/search?q=" + query + tail
+    return "https://news.google.com/rss/search?q=" + quote_plus(query) + tail
 
 
-# Tiap sumber punya daftar "urls": dicoba berurutan, yang pertama berisi berita dipakai.
+# ==================== KATA KUNCI (ubah di sini) ====================
+# Merk dengan nama khas: cukup judul berita menyebut nama ini.
+BRANDS = ["antam", "galeri ?24", "king halim", "bsi gold", "emasku",
+          "lotus archi", "hartadinata", "semar nusantara", "waris sampoerna"]
+# Nama yang bisa berarti hal lain (UBS = bank, Waris = warisan, dst.):
+# hanya lolos kalau ada konteks emas atau tertulis "harga <nama>".
+BRANDS_AMBIGUOUS = ["ubs", "tring", "semar", "waris", "lotus"]
+CONTEXT = ["emas", "gold", "logam mulia", "batangan", "buyback", "gram"]
+
+# Pencarian Google News (cadangan per situs + pencarian umum + pencarian merk)
+BRAND_Q = ('(antam OR ubs OR galeri24 OR "king halim" OR "bsi gold" OR emasku OR '
+           '"lotus archi" OR hartadinata OR "semar nusantara" OR "waris sampoerna" '
+           'OR tring) emas')
+
+
+def site_q(domain):
+    return "(emas OR antam OR ubs OR galeri24 OR emasku OR hartadinata) site:" + domain + " when:3d"
+
+
+# Tiap sumber dicoba berurutan; URL pertama yang berisi berita dipakai.
 # Taruh RSS portal langsung di atas (ada cuplikan + gambar), Google News di paling bawah.
 FEEDS = [
     {"source": "KONTAN_INVESTASI", "name": "Kontan", "lang": "id", "filter": True,
      "urls": ["https://keuangan.kontan.co.id/rss",
-              gn("harga+emas+site:kontan.co.id+when:3d")]},
+              gn(site_q("kontan.co.id"))]},
     {"source": "LIPUTAN6_BISNIS", "name": "Liputan6 Bisnis", "lang": "id", "filter": True,
      "urls": ["https://feed.liputan6.com/rss/bisnis",
-              gn("harga+emas+site:liputan6.com+when:3d")]},
+              gn(site_q("liputan6.com"))]},
     {"source": "DETIK_FINANCE", "name": "detikFinance", "lang": "id", "filter": True,
      "urls": ["https://finance.detik.com/rss",
-              gn("harga+emas+site:detik.com+when:3d")]},
+              gn(site_q("detik.com"))]},
     {"source": "MINING_COM", "name": "Mining.com", "lang": "en", "filter": True,
      "urls": ["https://www.mining.com/tag/gold/feed/",
-              gn("gold+site:mining.com+when:3d", "en")]},
+              gn("gold site:mining.com when:3d", "en")]},
     {"source": "GOOGLE_NEWS_ID", "lang": "id", "filter": True,
-     "urls": [gn("harga+emas+OR+emas+antam+OR+investasi+emas+when:3d")]},
+     "urls": [gn('("harga emas" OR "investasi emas" OR "berita emas" OR "emas antam") when:3d')]},
+    {"source": "GOOGLE_NEWS_MERK", "lang": "id", "filter": True,
+     "urls": [gn(BRAND_Q + " when:3d")]},
     {"source": "GOOGLE_NEWS_EN", "lang": "en", "filter": True,
-     "urls": [gn("gold+price+OR+gold+market+when:3d", "en")]},
+     "urls": [gn('("gold price" OR "gold market") when:3d', "en")]},
 ]
 
 # Filter berita emas: cocok per KATA (bukan potongan kata), jadi "kemasan" / "pemasaran" tidak lolos.
-GOLD_RE = re.compile(r"\b(emas|antam|logam mulia|galeri ?24|gold|bullion|xau(usd)?)\b", re.I)
+GOLD_RE = re.compile(r"\b(emas|logam mulia|gold|bullion|xau(usd)?|" + "|".join(BRANDS) + r")\b", re.I)
+AMBIG_RE = re.compile(r"\b(" + "|".join(BRANDS_AMBIGUOUS) + r")\b", re.I)
+PRICE_BRAND_RE = re.compile(r"\bharga (" + "|".join(BRANDS_AMBIGUOUS) + r")\b", re.I)
+CONTEXT_RE = re.compile(r"\b(" + "|".join(CONTEXT) + r")\b", re.I)
 STRONG_RE = re.compile(r"harga emas|emas dunia|emas antam|gold price|price of gold", re.I)
 SKIP_RE = re.compile(r"medali|generasi emas|indonesia emas|emas 2045|gold medal|golden", re.I)
 
@@ -52,6 +79,11 @@ def is_gold(title, snippet):
         return False
     if GOLD_RE.search(title):
         return True
+    if PRICE_BRAND_RE.search(title):
+        return True
+    if AMBIG_RE.search(title):
+        if CONTEXT_RE.search(title + " " + snippet):
+            return True
     return STRONG_RE.search(snippet) is not None
 
 
