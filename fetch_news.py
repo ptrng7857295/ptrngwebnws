@@ -24,22 +24,102 @@ def gn(query, lang="id"):
 
 
 # ==================== KATA KUNCI (ubah di sini) ====================
-# Merk dengan nama khas: cukup judul berita menyebut nama ini.
-BRANDS = ["antam", "galeri ?24", "king halim", "bsi gold", "emasku",
-          "lotus archi", "hartadinata", "semar nusantara", "waris sampoerna"]
-# Nama yang bisa berarti hal lain (UBS = bank, Waris = warisan, dst.):
-# hanya lolos kalau ada konteks emas atau tertulis "harga <nama>".
-BRANDS_AMBIGUOUS = ["ubs", "tring", "semar", "waris", "lotus"]
+# Berita hanya lolos kalau JUDULNYA memuat frasa di bawah. Kata "emas" saja TIDAK cukup.
+
+# 1) Berita lokal (bahasa Indonesia): frasa pencarian
+PHRASES_ID = [
+    "harga emas", "investasi emas", "tabungan emas", "emas dunia", "emas anjlok",
+    "emas perhiasan", "emas digital", "harga emas pegadaian", "beli emas",
+    "jual emas", "cek harga emas", "prediksi harga emas", "buyback emas",
+    "transaksi emas",
+]
+
+# 2) Berita internasional (bahasa Inggris)
+PHRASES_EN = ["gold price"]
+# Judul internasional yang memuat "gold" + salah satu kata pasar ini juga lolos
+# (mis. "Gold falls ahead of PCE data"). Kosongkan daftar ini ([]) agar hanya frasa di atas.
+GOLD_EN_CONTEXT = [
+    "price", "prices", "ounce", "bullion", "futures", "spot", "fed", "inflation",
+    "dollar", "etf", "rally", "record", "forecast", "target", "outlook", "rate cut",
+    "falls", "slips", "drops", "slides", "tumbles", "plunges", "rises", "climbs",
+    "jumps", "surges", "gains", "retreats", "extends",
+]
+
+# 3) Nama brand emas
+# Nama khas: judul cukup menyebut nama ini (boleh pola regex, mis. "galeri ?24").
+BRANDS = [
+    "bsi gold", "semar nusantara", "king halim", "galeri ?24", "tring!? pegadaian",
+    "lotus archi", "hartadinata", "waris sampoerna",
+]
+# Nama yang bisa berarti hal lain (UBS = bank, BYOND = aplikasi bank, Antam = juga tambang nikel):
+# lolos hanya jika ada konteks emas (kata di CONTEXT) atau judulnya "harga <nama>".
+BRANDS_AMBIGUOUS = ["antam", "ubs", "byond", "tring"]
 CONTEXT = ["emas", "gold", "logam mulia", "batangan", "buyback", "gram"]
 
-# Pencarian Google News (cadangan per situs + pencarian umum + pencarian merk)
-BRAND_Q = ('(antam OR ubs OR galeri24 OR "king halim" OR "bsi gold" OR emasku OR '
-           '"lotus archi" OR hartadinata OR "semar nusantara" OR "waris sampoerna" '
-           'OR tring) emas')
+# Dibuang walau cocok di atas
+SKIP_WORDS = ["medali", "generasi emas", "indonesia emas", "emas 2045",
+              "gold medal", "golden", "gold coast", "gold cup"]
+
+
+def _phrase(p):
+    return r"\s+".join(re.escape(w) for w in p.split())
+
+
+def _any(words, raw=False):
+    parts = [w if raw else _phrase(w) for w in words]
+    return re.compile(r"\b(" + "|".join(parts) + r")\b", re.I)
+
+
+PHRASE_ID_RE = _any(PHRASES_ID)
+PHRASE_EN_RE = _any(PHRASES_EN)
+EN_CONTEXT_RE = _any(GOLD_EN_CONTEXT) if GOLD_EN_CONTEXT else None
+GOLD_WORD_RE = re.compile(r"\bgold\b", re.I)
+BRAND_RE = _any(BRANDS, raw=True)
+AMBIG_RE = _any(BRANDS_AMBIGUOUS)
+PRICE_BRAND_RE = re.compile(r"\bharga\s+(" + "|".join(re.escape(b) for b in BRANDS_AMBIGUOUS) + r")\b", re.I)
+CONTEXT_RE = _any(CONTEXT)
+SKIP_RE = re.compile("|".join(re.escape(w) for w in SKIP_WORDS), re.I)
+
+
+def is_gold(title, snippet, lang="id"):
+    """True jika berita memang soal emas (investasi, harga, atau brand emas)."""
+    if SKIP_RE.search(title):
+        return False
+
+    if lang == "en":
+        if PHRASE_EN_RE.search(title):
+            return True
+        if EN_CONTEXT_RE is not None:
+            if GOLD_WORD_RE.search(title):
+                return EN_CONTEXT_RE.search(title) is not None
+        return False
+
+    if PHRASE_ID_RE.search(title):
+        return True
+    if BRAND_RE.search(title):
+        return True
+    if PRICE_BRAND_RE.search(title):
+        return True
+    if AMBIG_RE.search(title):
+        return CONTEXT_RE.search(title + " " + snippet) is not None
+    return False
+
+
+# ---- Pencarian Google News (dibentuk otomatis dari daftar di atas) ----
+def _q(terms):
+    return " OR ".join('"' + t + '"' if " " in t else t for t in terms)
+
+
+BRAND_TERMS = ["antam", "bsi gold", "byond", "semar nusantara", "king halim", "galeri24",
+               "galeri 24", "tring pegadaian", "lotus archi", "ubs", "hartadinata",
+               "waris sampoerna"]
+Q_LOKAL = "(" + _q(PHRASES_ID) + ")"
+Q_BRAND = "(" + _q(BRAND_TERMS) + ") emas"
+Q_INTL = "(" + _q(PHRASES_EN) + ")"
 
 
 def site_q(domain):
-    return "(emas OR antam OR ubs OR galeri24 OR emasku OR hartadinata) site:" + domain + " when:3d"
+    return "(" + _q(PHRASES_ID + BRAND_TERMS) + ") site:" + domain + " when:3d"
 
 
 # Tiap sumber dicoba berurutan; URL pertama yang berisi berita dipakai.
@@ -58,34 +138,13 @@ FEEDS = [
      "urls": ["https://www.mining.com/tag/gold/feed/",
               gn("gold site:mining.com when:3d", "en")]},
     {"source": "GOOGLE_NEWS_ID", "lang": "id", "filter": True,
-     "urls": [gn('("harga emas" OR "investasi emas" OR "berita emas" OR "emas antam") when:3d')]},
+     "urls": [gn(Q_LOKAL + " when:3d")]},
     {"source": "GOOGLE_NEWS_MERK", "lang": "id", "filter": True,
-     "urls": [gn(BRAND_Q + " when:3d")]},
+     "urls": [gn(Q_BRAND + " when:3d")]},
     {"source": "GOOGLE_NEWS_EN", "lang": "en", "filter": True,
-     "urls": [gn('("gold price" OR "gold market") when:3d', "en")]},
+     "urls": [gn(Q_INTL + " when:3d", "en")]},
 ]
-
-# Filter berita emas: cocok per KATA (bukan potongan kata), jadi "kemasan" / "pemasaran" tidak lolos.
-GOLD_RE = re.compile(r"\b(emas|logam mulia|gold|bullion|xau(usd)?|" + "|".join(BRANDS) + r")\b", re.I)
-AMBIG_RE = re.compile(r"\b(" + "|".join(BRANDS_AMBIGUOUS) + r")\b", re.I)
-PRICE_BRAND_RE = re.compile(r"\bharga (" + "|".join(BRANDS_AMBIGUOUS) + r")\b", re.I)
-CONTEXT_RE = re.compile(r"\b(" + "|".join(CONTEXT) + r")\b", re.I)
-STRONG_RE = re.compile(r"harga emas|emas dunia|emas antam|gold price|price of gold", re.I)
-SKIP_RE = re.compile(r"medali|generasi emas|indonesia emas|emas 2045|gold medal|golden", re.I)
-
-
-def is_gold(title, snippet):
-    if SKIP_RE.search(title):
-        return False
-    if GOLD_RE.search(title):
-        return True
-    if PRICE_BRAND_RE.search(title):
-        return True
-    if AMBIG_RE.search(title):
-        if CONTEXT_RE.search(title + " " + snippet):
-            return True
-    return STRONG_RE.search(snippet) is not None
-
+# ===================================================================
 
 PER_FEED = 30        # maksimal berita diambil per sumber tiap run
 MAX_ITEMS = 150      # maksimal berita disimpan
@@ -173,7 +232,7 @@ def parse_url(feed, feed_url):
             snippet = ""
 
         if feed.get("filter", True):
-            if not is_gold(title, snippet):
+            if not is_gold(title, snippet, feed["lang"]):
                 continue
 
         try:
