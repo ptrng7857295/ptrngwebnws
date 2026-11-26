@@ -137,6 +137,25 @@ FEEDS = [
     {"source": "MINING_COM", "name": "Mining.com", "lang": "en", "filter": True,
      "urls": ["https://www.mining.com/tag/gold/feed/",
               gn("gold site:mining.com when:3d", "en")]},
+    # ---- RSS tambahan (satu baris per RSS; "name" = nama yang tampil di kartu) ----
+    {"source": "DETIK_EKBIS", "name": "detikFinance", "lang": "id", "filter": True,
+     "urls": ["https://finance.detik.com/berita-ekonomi-bisnis/rss"]},
+    {"source": "CNBC_MARKET", "name": "CNBC Indonesia", "lang": "id", "filter": True,
+     "urls": ["https://www.cnbcindonesia.com/market/rss"]},
+    {"source": "CNBC_NEWS", "name": "CNBC Indonesia", "lang": "id", "filter": True,
+     "urls": ["https://www.cnbcindonesia.com/rss"]},
+    {"source": "CNBC_RESEARCH", "name": "CNBC Indonesia", "lang": "id", "filter": True,
+     "urls": ["https://www.cnbcindonesia.com/research/rss"]},
+    {"source": "SINDONEWS_EKBIS", "name": "Sindonews", "lang": "id", "filter": True,
+     "urls": ["https://ekbis.sindonews.com/rss"]},
+    {"source": "MEDCOM", "name": "Medcom.id", "lang": "id", "filter": True,
+     "urls": ["https://www.medcom.id/feed/flipboard"]},
+    {"source": "BLOOMBERG_TECHNOZ", "name": "Bloomberg Technoz", "lang": "id", "filter": True,
+     "urls": ["https://www.bloombergtechnoz.com/rss"]},
+    {"source": "ANTARA_KEPRI", "name": "Antara Kepri", "lang": "id", "filter": True,
+     "urls": ["https://kepri.antaranews.com/rss/ekonomi-ftz.xml"]},
+    {"source": "CNN_EKONOMI", "name": "CNN Indonesia", "lang": "id", "filter": True,
+     "urls": ["https://www.cnnindonesia.com/ekonomi/rss"]},
     {"source": "GOOGLE_NEWS_ID", "lang": "id", "filter": True,
      "urls": [gn(Q_LOKAL + " when:3d")]},
     {"source": "GOOGLE_NEWS_MERK", "lang": "id", "filter": True,
@@ -214,6 +233,7 @@ def parse_url(feed, feed_url):
 
         desc_raw = item.findtext("description") or ""
         snippet = clean_text(desc_raw)
+        snippet = re.sub(r"\s*\|\s*", " ", snippet)   # Medcom: poin dipisah tanda |
 
         # Google News menaruh nama media di <source>, dan judul berakhiran " - Media"
         publisher = ""
