@@ -156,12 +156,7 @@ FEEDS = [
      "urls": ["https://kepri.antaranews.com/rss/ekonomi-ftz.xml"]},
     {"source": "CNN_EKONOMI", "name": "CNN Indonesia", "lang": "id", "filter": True,
      "urls": ["https://www.cnnindonesia.com/ekonomi/rss"]},
-    {"source": "GOOGLE_NEWS_ID", "lang": "id", "filter": True,
-     "urls": [gn(Q_LOKAL + " when:3d")]},
-    {"source": "GOOGLE_NEWS_MERK", "lang": "id", "filter": True,
-     "urls": [gn(Q_BRAND + " when:3d")]},
-    {"source": "GOOGLE_NEWS_EN", "lang": "en", "filter": True,
-     "urls": [gn(Q_INTL + " when:3d", "en")]},
+
 ]
 # ===================================================================
 
