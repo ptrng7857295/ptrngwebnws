@@ -11,17 +11,6 @@ import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 
 # ===================== KONFIGURASI =====================
-from urllib.parse import quote_plus
-
-
-def gn(query, lang="id"):
-    """URL RSS Google News. Tulis query apa adanya (boleh spasi, tanda kutip, kurung)."""
-    if lang == "id":
-        tail = "&hl=id&gl=ID&ceid=ID:id"
-    else:
-        tail = "&hl=en-US&gl=US&ceid=US:en"
-    return "https://news.google.com/rss/search?q=" + quote_plus(query) + tail
-
 
 # ==================== KATA KUNCI (ubah di sini) ====================
 # Berita hanya lolos kalau JUDULNYA memuat frasa di bawah. Kata "emas" saja TIDAK cukup.
@@ -105,39 +94,20 @@ def is_gold(title, snippet, lang="id"):
     return False
 
 
-# ---- Pencarian Google News (dibentuk otomatis dari daftar di atas) ----
-def _q(terms):
-    return " OR ".join('"' + t + '"' if " " in t else t for t in terms)
-
-
-BRAND_TERMS = ["antam", "bsi gold", "byond", "semar nusantara", "king halim", "galeri24",
-               "galeri 24", "tring pegadaian", "lotus archi", "ubs", "hartadinata",
-               "waris sampoerna"]
-Q_LOKAL = "(" + _q(PHRASES_ID) + ")"
-Q_BRAND = "(" + _q(BRAND_TERMS) + ") emas"
-Q_INTL = "(" + _q(PHRASES_EN) + ")"
-
-
-def site_q(domain):
-    return "(" + _q(PHRASES_ID + BRAND_TERMS) + ") site:" + domain + " when:3d"
-
-
-# Tiap sumber dicoba berurutan; URL pertama yang berisi berita dipakai.
-# Taruh RSS portal langsung di atas (ada cuplikan + gambar), Google News di paling bawah.
+# ==================== DAFTAR RSS (tambah/hapus di sini) ====================
+# Tiap blok = satu sumber:
+#   source = kode unik tanpa spasi (muncul di log)
+#   name   = nama media yang tampil di kartu berita
+#   lang   = "id" (tab Indonesia) atau "en" (tab Internasional)
+#   filter = True -> hanya simpan berita emas (aturan kata kunci di atas)
+#   urls   = daftar URL RSS, dicoba berurutan; URL pertama yang berisi berita dipakai
 FEEDS = [
     {"source": "KONTAN_INVESTASI", "name": "Kontan", "lang": "id", "filter": True,
-     "urls": ["https://keuangan.kontan.co.id/rss",
-              gn(site_q("kontan.co.id"))]},
+     "urls": ["https://keuangan.kontan.co.id/rss"]},
     {"source": "LIPUTAN6_BISNIS", "name": "Liputan6 Bisnis", "lang": "id", "filter": True,
-     "urls": ["https://feed.liputan6.com/rss/bisnis",
-              gn(site_q("liputan6.com"))]},
+     "urls": ["https://feed.liputan6.com/rss/bisnis"]},
     {"source": "DETIK_FINANCE", "name": "detikFinance", "lang": "id", "filter": True,
-     "urls": ["https://finance.detik.com/rss",
-              gn(site_q("detik.com"))]},
-    {"source": "MINING_COM", "name": "Mining.com", "lang": "en", "filter": True,
-     "urls": ["https://www.mining.com/tag/gold/feed/",
-              gn("gold site:mining.com when:3d", "en")]},
-    # ---- RSS tambahan (satu baris per RSS; "name" = nama yang tampil di kartu) ----
+     "urls": ["https://finance.detik.com/rss"]},
     {"source": "DETIK_EKBIS", "name": "detikFinance", "lang": "id", "filter": True,
      "urls": ["https://finance.detik.com/berita-ekonomi-bisnis/rss"]},
     {"source": "CNBC_MARKET", "name": "CNBC Indonesia", "lang": "id", "filter": True,
@@ -156,9 +126,10 @@ FEEDS = [
      "urls": ["https://kepri.antaranews.com/rss/ekonomi-ftz.xml"]},
     {"source": "CNN_EKONOMI", "name": "CNN Indonesia", "lang": "id", "filter": True,
      "urls": ["https://www.cnnindonesia.com/ekonomi/rss"]},
-
+    {"source": "MINING_COM", "name": "Mining.com", "lang": "en", "filter": True,
+     "urls": ["https://www.mining.com/tag/gold/feed/"]},
 ]
-# ===================================================================
+# ===========================================================================
 
 PER_FEED = 30        # maksimal berita diambil per sumber tiap run
 MAX_ITEMS = 150      # maksimal berita disimpan
@@ -230,19 +201,9 @@ def parse_url(feed, feed_url):
         snippet = clean_text(desc_raw)
         snippet = re.sub(r"\s*\|\s*", " ", snippet)   # Medcom: poin dipisah tanda |
 
-        # Google News menaruh nama media di <source>, dan judul berakhiran " - Media"
-        publisher = ""
-        src = item.find("source")
-        if src is not None and src.text:
-            publisher = src.text.strip()
-            suffix = " - " + publisher
-            if title.endswith(suffix):
-                title = title[: -len(suffix)].strip()
+        publisher = feed.get("name", "")
 
-        if not publisher:
-            publisher = feed.get("name", "")
-
-        # Deskripsi Google News hanya mengulang judul: kosongkan agar tidak dobel
+        # Jika deskripsi hanya mengulang judul, kosongkan agar tidak dobel
         if snippet.lower().startswith(title.lower()[:30]):
             snippet = ""
 
@@ -270,6 +231,12 @@ def parse_url(feed, feed_url):
     return out
 
 
+def keep_old(it):
+    if "news.google.com" in it.get("url", ""):
+        return False
+    return is_gold(it.get("title", ""), it.get("snippet", ""), it.get("lang", "id"))
+
+
 def title_key(title):
     return re.sub(r"[^a-z0-9]", "", title.lower())[:60]
 
@@ -282,6 +249,13 @@ def main():
                 old = json.load(f).get("items", [])
         except Exception:
             old = []
+
+    # Bersihkan berita lama: buang yang berasal dari Google News dan saring ulang
+    # dengan aturan kata kunci terbaru, agar perubahan langsung berlaku
+    old_raw = old
+    old = [it for it in old_raw if keep_old(it)]
+    if len(old) != len(old_raw):
+        print("Dibuang dari berita lama: " + str(len(old_raw) - len(old)))
 
     fresh, ok = [], 0
     for feed in FEEDS:
@@ -307,7 +281,7 @@ def main():
     merged.sort(key=lambda x: x["time"], reverse=True)
     merged = merged[:MAX_ITEMS]
 
-    if merged == old:
+    if merged == old_raw:
         print("Tidak ada perubahan")
         return
 
